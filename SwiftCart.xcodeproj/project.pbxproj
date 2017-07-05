@@ -14,6 +14,7 @@
 		1C4728A51F0CE53B00AFCAC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C4728A41F0CE53B00AFCAC6 /* Assets.xcassets */; };
 		1C4728A81F0CE53B00AFCAC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C4728A61F0CE53B00AFCAC6 /* LaunchScreen.storyboard */; };
 		1C4728B31F0CE53B00AFCAC6 /* SwiftCartTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4728B21F0CE53B00AFCAC6 /* SwiftCartTests.swift */; };
+		1C4728BE1F0D388800AFCAC6 /* icon_512.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C4728BD1F0D388700AFCAC6 /* icon_512.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		1C4728AE1F0CE53B00AFCAC6 /* SwiftCartTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftCartTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C4728B21F0CE53B00AFCAC6 /* SwiftCartTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftCartTests.swift; sourceTree = "<group>"; };
 		1C4728B41F0CE53B00AFCAC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C4728BD1F0D388700AFCAC6 /* icon_512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_512.png; path = ../../../postcardapp/iconizer/swift_cart/icon_512.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 				1C47289F1F0CE53B00AFCAC6 /* SecondViewController.swift */,
 				1C4728A11F0CE53B00AFCAC6 /* Main.storyboard */,
 				1C4728A41F0CE53B00AFCAC6 /* Assets.xcassets */,
+				1C4728BD1F0D388700AFCAC6 /* icon_512.png */,
 				1C4728A61F0CE53B00AFCAC6 /* LaunchScreen.storyboard */,
 				1C4728A91F0CE53B00AFCAC6 /* Info.plist */,
 			);
@@ -183,6 +186,7 @@
 				1C4728A81F0CE53B00AFCAC6 /* LaunchScreen.storyboard in Resources */,
 				1C4728A51F0CE53B00AFCAC6 /* Assets.xcassets in Resources */,
 				1C4728A31F0CE53B00AFCAC6 /* Main.storyboard in Resources */,
+				1C4728BE1F0D388800AFCAC6 /* icon_512.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

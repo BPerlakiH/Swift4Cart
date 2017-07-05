@@ -2,7 +2,8 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "first.pdf"
+      "filename" : "icon_cart.png",
+      "scale" : "1x"
     }
   ],
   "info" : {
