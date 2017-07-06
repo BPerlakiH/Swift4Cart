@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SwiftCart/Model/Products.swift"
-            timestampString = "521009467.067893"
+            timestampString = "521013831.521243"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "20"
-            endingLineNumber = "20"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
             landmarkName = "getAll()"
             landmarkType = "7">
             <Locations>

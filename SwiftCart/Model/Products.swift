@@ -10,13 +10,7 @@ import Foundation
 
 class Products {
 
-    struct Product: Codable {
-        var name: String
-        var price: Float
-        var unit: String
-    }
-
-    func getAll () -> [Product] {
+    func all () -> [Product] {
         let decoder = JSONDecoder()
         if let products = try? decoder.decode([Product].self, from: _getJsonData()) {
             return products

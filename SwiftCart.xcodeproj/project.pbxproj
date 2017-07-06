@@ -13,11 +13,15 @@
 		1C4728A31F0CE53B00AFCAC6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C4728A11F0CE53B00AFCAC6 /* Main.storyboard */; };
 		1C4728A51F0CE53B00AFCAC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C4728A41F0CE53B00AFCAC6 /* Assets.xcassets */; };
 		1C4728A81F0CE53B00AFCAC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C4728A61F0CE53B00AFCAC6 /* LaunchScreen.storyboard */; };
-		1C4728B31F0CE53B00AFCAC6 /* SwiftCartTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4728B21F0CE53B00AFCAC6 /* SwiftCartTests.swift */; };
 		1C4728BE1F0D388800AFCAC6 /* icon_512.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C4728BD1F0D388700AFCAC6 /* icon_512.png */; };
 		1C4728C01F0D588900AFCAC6 /* ProductTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4728BF1F0D588900AFCAC6 /* ProductTests.swift */; };
 		1C4728C51F0D5CB100AFCAC6 /* Products.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4728C41F0D5CB100AFCAC6 /* Products.swift */; };
 		1C4728C61F0D5CB100AFCAC6 /* Products.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4728C41F0D5CB100AFCAC6 /* Products.swift */; };
+		1CDBBF751F0DFBF3003E1750 /* CartTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDBBF741F0DFBF3003E1750 /* CartTests.swift */; };
+		1CDBBF771F0DFC26003E1750 /* Cart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDBBF761F0DFC26003E1750 /* Cart.swift */; };
+		1CDBBF781F0DFC26003E1750 /* Cart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDBBF761F0DFC26003E1750 /* Cart.swift */; };
+		1CDBBF7A1F0DFF95003E1750 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDBBF791F0DFF95003E1750 /* Product.swift */; };
+		1CDBBF7B1F0DFF95003E1750 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDBBF791F0DFF95003E1750 /* Product.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,11 +44,13 @@
 		1C4728A71F0CE53B00AFCAC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1C4728A91F0CE53B00AFCAC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1C4728AE1F0CE53B00AFCAC6 /* SwiftCartTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftCartTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1C4728B21F0CE53B00AFCAC6 /* SwiftCartTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftCartTests.swift; sourceTree = "<group>"; };
 		1C4728B41F0CE53B00AFCAC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1C4728BD1F0D388700AFCAC6 /* icon_512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_512.png; path = ../../../postcardapp/iconizer/swift_cart/icon_512.png; sourceTree = "<group>"; };
 		1C4728BF1F0D588900AFCAC6 /* ProductTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTests.swift; sourceTree = "<group>"; };
 		1C4728C41F0D5CB100AFCAC6 /* Products.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Products.swift; sourceTree = "<group>"; };
+		1CDBBF741F0DFBF3003E1750 /* CartTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTests.swift; sourceTree = "<group>"; };
+		1CDBBF761F0DFC26003E1750 /* Cart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cart.swift; sourceTree = "<group>"; };
+		1CDBBF791F0DFF95003E1750 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,9 +108,9 @@
 		1C4728B11F0CE53B00AFCAC6 /* SwiftCartTests */ = {
 			isa = PBXGroup;
 			children = (
-				1C4728B21F0CE53B00AFCAC6 /* SwiftCartTests.swift */,
 				1C4728B41F0CE53B00AFCAC6 /* Info.plist */,
 				1C4728BF1F0D588900AFCAC6 /* ProductTests.swift */,
+				1CDBBF741F0DFBF3003E1750 /* CartTests.swift */,
 			);
 			path = SwiftCartTests;
 			sourceTree = "<group>";
@@ -113,6 +119,8 @@
 			isa = PBXGroup;
 			children = (
 				1C4728C41F0D5CB100AFCAC6 /* Products.swift */,
+				1CDBBF761F0DFC26003E1750 /* Cart.swift */,
+				1CDBBF791F0DFF95003E1750 /* Product.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -221,8 +229,10 @@
 			files = (
 				1C4728A01F0CE53B00AFCAC6 /* CartViewController.swift in Sources */,
 				1C4728C51F0D5CB100AFCAC6 /* Products.swift in Sources */,
+				1CDBBF771F0DFC26003E1750 /* Cart.swift in Sources */,
 				1C47289C1F0CE53B00AFCAC6 /* AppDelegate.swift in Sources */,
 				1C47289E1F0CE53B00AFCAC6 /* ProductViewController.swift in Sources */,
+				1CDBBF7A1F0DFF95003E1750 /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,9 +240,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C4728B31F0CE53B00AFCAC6 /* SwiftCartTests.swift in Sources */,
 				1C4728C61F0D5CB100AFCAC6 /* Products.swift in Sources */,
+				1CDBBF781F0DFC26003E1750 /* Cart.swift in Sources */,
+				1CDBBF7B1F0DFF95003E1750 /* Product.swift in Sources */,
 				1C4728C01F0D588900AFCAC6 /* ProductTests.swift in Sources */,
+				1CDBBF751F0DFBF3003E1750 /* CartTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,6 +460,7 @@
 				1C4728B91F0CE53B00AFCAC6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1C4728BA1F0CE53B00AFCAC6 /* Build configuration list for PBXNativeTarget "SwiftCartTests" */ = {
 			isa = XCConfigurationList;
@@ -456,6 +469,7 @@
 				1C4728BC1F0CE53B00AFCAC6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
