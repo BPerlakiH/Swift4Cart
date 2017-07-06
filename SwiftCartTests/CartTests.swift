@@ -8,34 +8,13 @@
 
 import XCTest
 
-//{
-//    "name": "Peas",
-//    "price": 0.95,
-//    "unit": "bag"
-//},
-//{
-//    "name": "Eggs",
-//    "price": 2.10,
-//    "unit": "dozen"
-//},
-//{
-//    "name": "Milk",
-//    "price": 1.30,
-//    "unit": "bottle"
-//},
-//{
-//    "name": "Beans",
-//    "price": 0.73,
-//    "unit": "can"
-//}
-
 class CartTests: XCTestCase {
 
     let products: [Product] = Products().all()
-    var peas : Product { get { return products[0] } }
-    var eggs : Product { get { return products[1] } }
-    var milk : Product { get { return products[2] } }
-    var beans : Product{ get { return products[3] } }
+    var peas : Product { get { return products[0] } } //0.95
+    var eggs : Product { get { return products[1] } } //2.10
+    var milk : Product { get { return products[2] } } //1.30
+    var beans : Product{ get { return products[3] } } //0.73
 
     func testEmptyCart() {
         let cart = Cart()
@@ -62,12 +41,5 @@ class CartTests: XCTestCase {
         cart.add(product: milk)
         XCTAssertEqualWithAccuracy(cart.total, peas.price + 3*beans.price + 2*milk.price, accuracy: 0.001, "price should sum up to peas + 3*beans + 2*milk")
     }
-    
-//    func testAddProduct() {
-//        let cart = Cart()
-//        cart.total
-//        cart.add(peas)
-//        XCTAssert(cart.total == peas.price, "cart to") cart.total
-//    }
 
 }
