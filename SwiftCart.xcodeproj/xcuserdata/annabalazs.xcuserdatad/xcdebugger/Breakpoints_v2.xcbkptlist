@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SwiftCart/Model/Products.swift"
+            timestampString = "521009467.067893"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "getAll()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwiftCart.Products.getAll() -&gt; Swift.Array&lt;SwiftCart.Products.Product&gt;"
+                  moduleName = "SwiftCart"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/annabalazs/dev/ios/SwiftCart/SwiftCart/Model/Products.swift"
+                  timestampString = "521005740.584942"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "24">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwiftCartTests.Products.getAll() -&gt; Swift.Array&lt;SwiftCartTests.Products.Product&gt;"
+                  moduleName = "SwiftCartTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/annabalazs/dev/ios/SwiftCart/SwiftCart/Model/Products.swift"
+                  timestampString = "521005745.747311"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "24">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

@@ -1,5 +1,5 @@
 //
-//  SecondViewController.swift
+//  FirstViewController.swift
 //  SwiftCart
 //
 //  Created by Balazs Perlaki-Horvath on 05/07/2017.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
+class ProductViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

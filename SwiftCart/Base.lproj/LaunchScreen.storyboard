@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.17" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
-    <device id="retina4_7" orientation="portrait">
+    <device id="ipad9_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -18,17 +18,18 @@
                         <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_512.png" translatesAutoresizingMaskIntoConstraints="NO" id="YfY-Yp-LCo">
-                                <rect key="frame" x="123.5" y="520" width="127.5" height="115"/>
+                                <rect key="frame" x="122" y="520" width="524" height="472"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="YfY-Yp-LCo" secondAttribute="height" multiplier="71:64" id="sbk-PT-ktI"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.22631508110000001" green="0.67225658889999995" blue="0.64111393689999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="YfY-Yp-LCo" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="500" id="1d1-sP-v4L"/>
                             <constraint firstAttribute="bottom" secondItem="YfY-Yp-LCo" secondAttribute="bottom" constant="32" id="N26-pp-pDD"/>
