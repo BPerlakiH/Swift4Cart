@@ -46,7 +46,21 @@ class CartTests: XCTestCase {
         let cart = Cart()
         cart.add(product: peas)
         XCTAssert(0 < cart.total, "the cart content should cost something")
-        XCTAssert(cart.total == peas.price, "the price of peas should be in the cart")
+        XCTAssertEqualWithAccuracy(cart.total, peas.price, accuracy: 0.001, "the price of peas should be in the cart")
+
+        cart.add(product: beans)
+        XCTAssertEqualWithAccuracy(cart.total, 1.68, accuracy: 0.001)
+        XCTAssertEqualWithAccuracy(cart.total, peas.price + beans.price, accuracy: 0.001, "price should sum up to peas + beans")
+
+        cart.add(product: beans)
+        XCTAssertEqualWithAccuracy(cart.total, peas.price + 2*beans.price, accuracy: 0.001, "price should sum up to peas + 2*beans")
+        cart.add(product: beans)
+        XCTAssertEqualWithAccuracy(cart.total, peas.price + 3*beans.price, accuracy: 0.001, "price should sum up to peas + 3*beans")
+
+        cart.add(product: milk)
+        XCTAssertEqualWithAccuracy(cart.total, peas.price + 3*beans.price + milk.price, accuracy: 0.001, "price should sum up to peas + 3*beans + milk")
+        cart.add(product: milk)
+        XCTAssertEqualWithAccuracy(cart.total, peas.price + 3*beans.price + 2*milk.price, accuracy: 0.001, "price should sum up to peas + 3*beans + 2*milk")
     }
     
 //    func testAddProduct() {
