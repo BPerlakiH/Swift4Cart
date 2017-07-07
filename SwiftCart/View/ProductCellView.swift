@@ -11,5 +11,7 @@ import UIKit
 
 class ProductCellView : UICollectionViewCell {
 
-
+    @IBOutlet weak var title: UILabel!
+    
+    @IBOutlet weak var price: UILabel!
 }
