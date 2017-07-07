@@ -10,12 +10,15 @@ import UIKit
 
 class ProductViewController: UICollectionViewController {
 
-    fileprivate let cart : Cart = Cart()
+    fileprivate let cart : Cart = Registry.instance.cart
     fileprivate let insets = UIEdgeInsets(top: 16.0, left: 16.0, bottom: 64.0, right: 16.0)
     fileprivate let sectionInsets = UIEdgeInsets(top: 16.0, left: 16.0, bottom: 16.0, right: 16.0)
     fileprivate let products:[Product] = Products().all()
     fileprivate let reuseID = "ProductCell"
     fileprivate let itemsPerRow: CGFloat = 2
+
+    @IBOutlet weak var buttonNavToCart: UIBarButtonItem!
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,7 +31,8 @@ class ProductViewController: UICollectionViewController {
 
     //update subviews on cart content changes
     func updateViews() {
-
+        //update Checkout nav button title
+        buttonNavToCart.title = (0 < cart.totalQuantity) ? "Checkout (\(cart.totalQuantity))" : "Checkout"
     }
 
 }

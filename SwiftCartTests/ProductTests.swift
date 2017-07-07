@@ -13,15 +13,15 @@ class ProductTests: XCTestCase {
     
     func testProductCount() {
         let products = Products().all()
-        XCTAssert(products.count == 4, "initially there should be 4 products")
+        XCTAssertEqual(products.count, 4)
     }
 
     func testProductPrices() {
         let products = Products().all()
-        XCTAssert(products.first?.price == 0.95, "a bag of peas should cost 0.95")
-        XCTAssert(products[1].price == 2.1, "a dozen of eggs should cost 2.10")
-        XCTAssert(products[2].price == 1.3, "a bottle of milk should cost 1.30")
-        XCTAssert(products.last?.price == 0.73, "a can of beans should cost 0.73")
+        XCTAssertEqual(products.first?.price, 0.95, "a bag of peas should cost 0.95")
+        XCTAssertEqual(products[1].price, 2.1, "a dozen of eggs should cost 2.10")
+        XCTAssertEqual(products[2].price, 1.3, "a bottle of milk should cost 1.30")
+        XCTAssertEqual(products.last?.price, 0.73, "a can of beans should cost 0.73")
     }
 
     func testProductNames() {

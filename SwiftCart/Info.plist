@@ -42,6 +42,18 @@
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
 	</array>
+	<key>FX_API_Key</key>
+	<string>8c2aac74b78d9b32553dc1bf80f403df</string>
+	<key>FX_Active_Currencies</key>
+	<array>
+		<string>AUD</string>
+		<string>CAD</string>
+		<string>CHF</string>
+		<string>EUR</string>
+		<string>GBP</string>
+		<string>HUF</string>
+		<string>PLN</string>
+	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
