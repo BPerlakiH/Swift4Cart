@@ -46,6 +46,7 @@
 	<string>8c2aac74b78d9b32553dc1bf80f403df</string>
 	<key>FX_Active_Currencies</key>
 	<array>
+		<string>USD</string>
 		<string>AUD</string>
 		<string>CAD</string>
 		<string>CHF</string>

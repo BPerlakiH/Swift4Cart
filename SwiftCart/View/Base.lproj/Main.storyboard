@@ -128,12 +128,21 @@
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <rect key="contentStretch" x="0.0" y="0.0" width="1" height="0.61799999999999999"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="cartCell" id="pvi-pE-JbG">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="cartCell" textLabel="n7q-qk-u3b" style="IBUITableViewCellStyleDefault" id="pvi-pE-JbG">
                                                 <rect key="frame" x="0.0" y="28" width="343" height="44"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pvi-pE-JbG" id="He4-G6-wBW">
                                                     <rect key="frame" x="0.0" y="0.0" width="343" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="n7q-qk-u3b">
+                                                            <rect key="frame" x="15" y="0.0" width="313" height="43.5"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
                                                 </tableViewCellContentView>
                                             </tableViewCell>
                                         </prototypes>
@@ -188,6 +197,7 @@
                     </view>
                     <connections>
                         <outlet property="currencyPicker" destination="0C5-Ev-YPh" id="ItW-NQ-tfA"/>
+                        <outlet property="labelSubTotal" destination="vCG-JZ-2fc" id="rtk-NC-FRT"/>
                         <outlet property="labelTotal" destination="Xvb-yA-Z0X" id="G0Y-Pg-Vz5"/>
                         <outlet property="tableView" destination="AzR-Kk-dvQ" id="bzq-Jd-OIb"/>
                     </connections>

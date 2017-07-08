@@ -49,10 +49,20 @@ class FX {
 //        }
     }
 
-    func priceOf(price: Float, inCurrency: String) -> Float{
+    func rateOf(currency: String) -> Float {
+        assert(currency.count == 3)
+        assert(activeCurrencies.contains(currency))
+        return self.response!.quotes["USD\(currency)"]!
+    }
+
+    func priceOf(price: Float, inCurrency: String) -> Float {
         assert(inCurrency.count == 3)
-        assert(activeCurrencies.contains(inCurrency))
-        return self.response!.quotes["USD\(inCurrency)"]! * price
+        assert(inCurrency == "USD" || activeCurrencies.contains(inCurrency))
+        if let rate = self.response?.quotes["USD\(inCurrency)"] {
+            return rate * price
+        } else {
+            return price
+        }
     }
 
     func _getJsonData() -> Data {
