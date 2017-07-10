@@ -14,12 +14,12 @@ class CartViewController: UIViewController {
     let cart : Cart = Registry.instance.cart
     var selectedCurrency = "USD"
 
-    var totalInCurrency : Float {
-        get { return fx.priceOf(price: cart.total, inCurrency: selectedCurrency) }
+    var totalInCurrency : String {
+        get { return String.init(format: "%.2f", fx.priceOf(price: cart.total, inCurrency: selectedCurrency)) }
     }
 
-    var currentRate : Float {
-        get { return fx.rateOf(currency: selectedCurrency) }
+    var currentRate : String {
+        get { return String.init(format: "%.2f", fx.rateOf(currency: selectedCurrency)) }
     }
 
     @IBOutlet weak var currencyPicker: UIPickerView!
@@ -31,10 +31,18 @@ class CartViewController: UIViewController {
         super.viewDidLoad()
         currencyPicker.dataSource = self
         currencyPicker.delegate = self
+        //initially set the picker value to the selected currency
+        currencyPicker.selectRow(fx.activeCurrencies.index(of: selectedCurrency)! , inComponent: 0, animated: false)
+
+        tableView.dataSource = self
+        tableView.delegate = self
     }
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        fx.refresh {
+            updateView()
+        }
         updateView()
     }
 
@@ -44,16 +52,12 @@ class CartViewController: UIViewController {
     }
 
     func updateView() {
-        fx.refresh()
         if selectedCurrency == "USD" {
             labelSubTotal.text = ""
         } else {
-            labelSubTotal.text =
-        """
-            USD \(cart.total) @ \(currentRate)
-        """
+            labelSubTotal.text = "\(cart.total) @ \(currentRate)"
         }
-        labelTotal.text = "\(totalInCurrency)"
+        labelTotal.text = totalInCurrency
     }
 
 }
@@ -81,5 +85,27 @@ extension CartViewController : UIPickerViewDelegate {
         selectedCurrency = fx.activeCurrencies[row]
         updateView()
     }
+}
+
+extension CartViewController : UITableViewDataSource {
+
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return cart.items.count
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cartItemCell", for: indexPath)
+        let cartItem = cart.items[indexPath.item]
+        let product = cartItem.product
+        cell.textLabel?.text = product.name
+        let displayPrice = "\(cartItem.quantity) * \(product.price)"
+        cell.detailTextLabel?.text = displayPrice
+        return cell
+    }
+}
+
+
+extension CartViewController : UITableViewDelegate {
+    
 }
 

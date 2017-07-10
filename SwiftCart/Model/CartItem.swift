@@ -20,4 +20,12 @@ class CartItem {
     }
 
 
+    func displayPrice() -> String {
+        return "\(quantity) \(product.displayUnit(quantity: quantity)) * \(product.price)"
+    }
+
+    func displayQuantity() -> String {
+        return "\(quantity)"
+    }
+
 }

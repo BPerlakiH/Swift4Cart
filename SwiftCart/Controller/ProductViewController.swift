@@ -23,6 +23,7 @@ class ProductViewController: UICollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Products"
+        updateViews();
     }
 
     override func didReceiveMemoryWarning() {
@@ -31,8 +32,14 @@ class ProductViewController: UICollectionViewController {
 
     //update subviews on cart content changes
     func updateViews() {
-        //update Checkout nav button title
-        buttonNavToCart.title = (0 < cart.totalQuantity) ? "Checkout (\(cart.totalQuantity))" : "Checkout"
+        //update Checkout nav button
+        if (cart.totalQuantity <= 0) {
+            buttonNavToCart.isEnabled = false
+            buttonNavToCart.title = ""
+        } else {
+            buttonNavToCart.isEnabled = true
+            buttonNavToCart.title = "Checkout (\(cart.totalQuantity))"
+        }
     }
 
 }

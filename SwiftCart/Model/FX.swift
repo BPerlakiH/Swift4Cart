@@ -11,11 +11,6 @@ import UIKit
 
 class FX {
 
-    struct FxResponse : Codable {
-        var quotes : Dictionary<String,Float>
-        var timestamp : Int64
-    }
-
     let apiKey : String
     let activeCurrencies : [String]
     var response : FxResponse?
@@ -29,24 +24,21 @@ class FX {
         return self.response?.quotes
     }
 
-    func refresh() {
-        let decoder = JSONDecoder()
-        self.response = try? decoder.decode(FxResponse.self, from: _getJsonData())
-        //dict2.forEach { (k,v) in dict1[k] = v }
+    func refresh(completion: () -> Void) {
+        let downloader = FXDownloader()
+        downloader.downloadRates(apiKey: apiKey, currencies: activeCurrencies) { (data, error) in
+            if let _ = error {
+                NSLog("other api error", error.debugDescription)
+                return
+            }
 
-//        for name:String in activeCurrencies {
-//            self.quotes = Dictionary.map(self.response?.quot)
-//            self.quotes[name] = self.response?.quotes["USD\(name)"]
-//        }
-
-//        if let respValue = try? decoder.decode(FxResponse.self, from: _getJsonData()) {
-//            self.response = respValue
-//            self.quotes = Dictionary<String, Float>(respValue.quotes, uniquingKeysWith: { (key, _) in key })
-//            NSLog("quotes: %@", quotes)
-//        } else {
-//            self.response = nil
-//            self.quotes = nil
-//        }
+            guard let jsonData = data else {
+                NSLog("no data has been returned")
+                return
+            }
+            let decoder = JSONDecoder()
+            self.response = try? decoder.decode(FxResponse.self, from: jsonData)
+        }
     }
 
     func rateOf(currency: String) -> Float {

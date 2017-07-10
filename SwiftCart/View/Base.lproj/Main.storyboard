@@ -6,6 +6,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.14"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -124,11 +125,11 @@
                                 <rect key="frame" x="16" y="64" width="343" height="603"/>
                                 <subviews>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="AzR-Kk-dvQ">
-                                        <rect key="frame" x="0.0" y="0.0" width="343" height="387"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="485"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <rect key="contentStretch" x="0.0" y="0.0" width="1" height="0.61799999999999999"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="cartCell" textLabel="n7q-qk-u3b" style="IBUITableViewCellStyleDefault" id="pvi-pE-JbG">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="cartItemCell" textLabel="n7q-qk-u3b" style="IBUITableViewCellStyleDefault" id="pvi-pE-JbG">
                                                 <rect key="frame" x="0.0" y="28" width="343" height="44"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pvi-pE-JbG" id="He4-G6-wBW">
@@ -147,36 +148,46 @@
                                             </tableViewCell>
                                         </prototypes>
                                     </tableView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Bdm-Cg-JVu">
-                                        <rect key="frame" x="0.0" y="387" width="343" height="216"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="b1W-Jw-EMh">
+                                        <rect key="frame" x="0.0" y="485" width="343" height="118"/>
                                         <subviews>
-                                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0C5-Ev-YPh">
-                                                <rect key="frame" x="0.0" y="0.0" width="171.5" height="216"/>
-                                                <color key="backgroundColor" red="0.93334799999999996" green="0.92952686549999997" blue="0.92517095800000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <color key="tintColor" red="0.22631508110000001" green="0.67225658889999995" blue="0.64111393689999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </pickerView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Obb-9l-4xi">
-                                                <rect key="frame" x="171.5" y="0.0" width="171.5" height="216"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="right" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$1.00" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vCG-JZ-2fc">
+                                                <rect key="frame" x="0.0" y="0.0" width="343" height="26"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
+                                                </accessibility>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="26" id="XO2-Vd-stH"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                <color key="textColor" red="0.99001914260000001" green="0.74339562650000002" blue="0.49979871510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Bdm-Cg-JVu">
+                                                <rect key="frame" x="0.0" y="34" width="343" height="84"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="right" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$1.00" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vCG-JZ-2fc">
-                                                        <rect key="frame" x="0.0" y="0.0" width="171.5" height="164"/>
-                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                                        <color key="textColor" red="0.99001914260000001" green="0.74339562650000002" blue="0.49979871510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.20" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xvb-yA-Z0X">
-                                                        <rect key="frame" x="0.0" y="164" width="171.5" height="52"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="52" id="7kh-He-qsk"/>
-                                                        </constraints>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="right" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.20" textAlignment="right" lineBreakMode="tailTruncation" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xvb-yA-Z0X">
+                                                        <rect key="frame" x="0.0" y="25.5" width="231" height="33.5"/>
+                                                        <accessibility key="accessibilityConfiguration">
+                                                            <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
+                                                        </accessibility>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                                         <color key="textColor" red="0.90907543899999999" green="0.55787259339999995" blue="0.33030283449999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
+                                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0C5-Ev-YPh">
+                                                        <rect key="frame" x="239" y="0.0" width="104" height="84"/>
+                                                        <color key="backgroundColor" red="0.44412404300000002" green="0.73838341240000005" blue="0.72750180959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="84" id="0HR-e9-gS0"/>
+                                                            <constraint firstAttribute="width" constant="104" id="Ifg-5P-IOu"/>
+                                                        </constraints>
+                                                    </pickerView>
                                                 </subviews>
+                                                <rect key="contentStretch" x="0.0" y="0.0" width="1" height="0.38"/>
                                             </stackView>
                                         </subviews>
-                                        <rect key="contentStretch" x="0.0" y="0.0" width="1" height="0.38"/>
                                     </stackView>
                                 </subviews>
                                 <constraints>
