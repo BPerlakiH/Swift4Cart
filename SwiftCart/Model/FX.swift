@@ -41,10 +41,10 @@ class FX {
         }
     }
 
-    func rateOf(currency: String) -> Float {
+    func rateOf(currency: String) -> Float? {
         assert(currency.count == 3)
         assert(activeCurrencies.contains(currency))
-        return self.response!.quotes["USD\(currency)"]!
+        return self.response?.quotes["USD\(currency)"]
     }
 
     func priceOf(price: Float, inCurrency: String) -> Float {

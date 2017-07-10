@@ -18,8 +18,14 @@ class CartViewController: UIViewController {
         get { return String.init(format: "%.2f", fx.priceOf(price: cart.total, inCurrency: selectedCurrency)) }
     }
 
-    var currentRate : String {
-        get { return String.init(format: "%.2f", fx.rateOf(currency: selectedCurrency)) }
+    var currentRate : String? {
+        get {
+            if let rate = fx.rateOf(currency: selectedCurrency) {
+                return String.init(format: "%.2f", rate)
+            } else {
+                return nil
+            }
+        }
     }
 
     @IBOutlet weak var currencyPicker: UIPickerView!
@@ -55,7 +61,7 @@ class CartViewController: UIViewController {
         if selectedCurrency == "USD" {
             labelSubTotal.text = ""
         } else {
-            labelSubTotal.text = "\(cart.total) @ \(currentRate)"
+            labelSubTotal.text = "\(cart.total) @ \(currentRate ?? "---")"
         }
         labelTotal.text = totalInCurrency
     }

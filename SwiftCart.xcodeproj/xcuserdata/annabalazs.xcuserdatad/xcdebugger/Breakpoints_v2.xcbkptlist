@@ -58,7 +58,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SwiftCart/Model/FXDownloader.swift"
-            timestampString = "521357249.395996"
+            timestampString = "521358212.34895"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "14"
@@ -70,11 +70,11 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SwiftCart/Model/FXDownloader.swift"
-            timestampString = "521357249.396065"
+            timestampString = "521358212.34902"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "22"
@@ -83,14 +83,14 @@
             landmarkType = "7">
             <Locations>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.URLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in SwiftCart.FXDownloader.downloadRates(apiKey: Swift.String, currencies: Swift.Array&lt;Swift.String&gt;, completion: (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSError&gt;) -&gt; ()) -&gt; ()"
                   moduleName = "SwiftCart"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/annabalazs/dev/ios/SwiftCart/SwiftCart/Model/FXDownloader.swift"
-                  timestampString = "521357249.617772"
+                  timestampString = "521357591.534957"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "22"
@@ -98,14 +98,14 @@
                   offsetFromSymbolStart = "171">
                </Location>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "closure #1 () -&gt; () in closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.URLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in SwiftCart.FXDownloader.downloadRates(apiKey: Swift.String, currencies: Swift.Array&lt;Swift.String&gt;, completion: (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSError&gt;) -&gt; ()) -&gt; ()"
                   moduleName = "SwiftCart"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/annabalazs/dev/ios/SwiftCart/SwiftCart/Model/FXDownloader.swift"
-                  timestampString = "521357249.619432"
+                  timestampString = "521357591.536482"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "23"
@@ -118,11 +118,11 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SwiftCart/Model/FXDownloader.swift"
-            timestampString = "521357249.396116"
+            timestampString = "521358212.34907"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "28"
@@ -131,14 +131,14 @@
             landmarkType = "7">
             <Locations>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.URLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in SwiftCart.FXDownloader.downloadRates(apiKey: Swift.String, currencies: Swift.Array&lt;Swift.String&gt;, completion: (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSError&gt;) -&gt; ()) -&gt; ()"
                   moduleName = "SwiftCart"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/annabalazs/dev/ios/SwiftCart/SwiftCart/Model/FXDownloader.swift"
-                  timestampString = "521357249.623419"
+                  timestampString = "521357591.540445"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "28"
@@ -146,14 +146,14 @@
                   offsetFromSymbolStart = "1349">
                </Location>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "closure #2 () -&gt; () in closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.URLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in SwiftCart.FXDownloader.downloadRates(apiKey: Swift.String, currencies: Swift.Array&lt;Swift.String&gt;, completion: (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSError&gt;) -&gt; ()) -&gt; ()"
                   moduleName = "SwiftCart"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/annabalazs/dev/ios/SwiftCart/SwiftCart/Model/FXDownloader.swift"
-                  timestampString = "521357249.625607"
+                  timestampString = "521357591.541882"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "29"
